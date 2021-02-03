@@ -41,6 +41,8 @@ const get_info = async()=>{
         output_status.style.color = "red"
         output_status.style.fontWeight = "bold"
         output_status.innerHTML = "Please Enter the city name before search"
+        status.innerHTML = ""
+        output.innerHTML = ""
     }
     else{
      let api = `http://api.openweathermap.org/data/2.5/weather?q=${city_name}&appid=e6778392aaeb5d71c756182bb63986e7`
@@ -71,6 +73,8 @@ const get_info = async()=>{
         output_status.style.color = "red"
         output_status.style.fontWeight = "bold"
         output_status.innerHTML = "Please Enter valid city name"
+        status.innerHTML = ""
+        output.innerHTML = ""
      }
     }
 }
