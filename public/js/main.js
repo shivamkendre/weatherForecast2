@@ -45,7 +45,7 @@ const get_info = async()=>{
         output.innerHTML = ""
     }
     else{
-     let api = `http://api.openweathermap.org/data/2.5/weather?q=${city_name}&appid=e6778392aaeb5d71c756182bb63986e7`
+     let api = `https://api.openweathermap.org/data/2.5/weather?q=${city_name}&appid=e6778392aaeb5d71c756182bb63986e7`
      try{
         const response =  await fetch(api)
         const data = await response.json()
