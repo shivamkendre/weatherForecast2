@@ -22,5 +22,5 @@ app.get('*', (req, res)=>{
     res.render('404')
 })
 app.listen(port , host, ()=>{
-    console.log("Listening to port 8000")
+    console.log(`Listening to port ${port}`)
 })
