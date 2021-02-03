@@ -3,7 +3,6 @@ const path = require('path')
 const hbs = require('hbs')
 const app = express()
 const port = process.env.PORT || 8000
-const host = "localhost"
 const static_path = path.join(__dirname, "../public")
 const partial_path = path.join(__dirname, "../templates/partials")
 app.set('view engine', 'hbs')
@@ -21,6 +20,6 @@ app.get('/weather', (req, res)=>{
 app.get('*', (req, res)=>{
     res.render('404')
 })
-app.listen(port , host, ()=>{
+app.listen(port ,  ()=>{
     console.log(`Listening to port ${port}`)
 })
