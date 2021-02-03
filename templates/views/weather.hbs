@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0-11/css/all.min.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    {{!-- external css link --}}
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    {{>header}}
+    {{!-- main body of page --}}
+    <main>
+        <div class="row no-gutters">
+            <div class="top-layer col-lg-6 col-md-10 mx-auto">
+                <input type="text" placeholder="Enter your city here" id = "city-name">
+                <input type="submit" value="search" class="btn btn-primary search-btn" id = "submit">
+            </div>
+        </div>
+        {{!-- this is main body of this page --}}
+        <main>
+            <div class="mx-auto main-body">
+                <div class="body-header d-flex justify-content-between">
+                    <p id = "day"></p>
+                    <p id = "date"></p>
+                </div>
+                <div class="body-content d-flex flex-column justify-content-between">
+                <p id = "output-status">Get you output here</p>
+                <div class = "font-big text-center d-flex justify-content-center">
+                   <p id = "output"> </p>
+                   <p class = "ml-4" id = "status"></p>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </main>
+    {{>footer}}
+    {{!-- external js link --}}
+    <script src = "js/main.js"></script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
